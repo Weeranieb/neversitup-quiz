@@ -1,5 +1,10 @@
 package main
 
+import (
+	"fmt"
+	"neverquiz/utils"
+)
+
 func main() {
-	println("Hello, World!")
+	fmt.Println(utils.Permutation("abc"))
 }
