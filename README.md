@@ -1,18 +1,16 @@
-Folder Structure Conventions
-============================
+# Folder Structure Conventions
 
-> Folder structure options and naming conventions for software projects
-
-### A typical top-level directory layout
+> This is my latest projects directory
 
     .
-    ├── build                   # Compiled files (alternatively `dist`)
-    ├── docs                    # Documentation files (alternatively `doc`)
-    ├── src                     # Source files (alternatively `lib` or `app`)
-    ├── test                    # Automated tests (alternatively `spec` or `tests`)
-    ├── tools                   # Tools and utilities
-    ├── LICENSE
+    ├── controllers                   # Handles incoming requests and returns responses
+    ├── middlewares                   # Middleware functions for request processing
+    ├── migrations                    # Database schema migrations
+    ├── pkg                           # combine all service, repo, etc.
+        ├── models                    # Data models for the application
+        ├── processors                # Business logic that access more than 1 domain
+        ├── repositories              # Data access layer
+        ├── services                  # Business logic and services
+    ├── utils                     # Utility functions and helpers
+    ├── main.go
     └── README.md
-
-> Use short lowercase names at least for the top-level files and folders except
-> `LICENSE`, `README.md`
